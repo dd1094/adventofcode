@@ -34,11 +34,13 @@ public class Jour1 {
     }                        
 	
     public static void main(String[] args) throws IOException {
-        Scanner s = new Scanner(new File("../Jeu de caractère/nombreJour1.txt"));
-        
-        while (s.hasNextInt()){
-            listeTexte.add(s.nextInt());
+        try (Scanner s = new Scanner(new File("../Jeu de caractère/nombreJour1.txt"))){
+            while (s.hasNextInt()){
+                listeTexte.add(s.nextInt());
+            }
         }
+        
+        
 
         System.out.println(etapeUn(listeTexte));
         System.out.println(etapeDeux(listeTexte));
