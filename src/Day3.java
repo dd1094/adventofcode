@@ -123,7 +123,7 @@ public class Day3 {
         }
         int CO2ScrubberRating = Integer.parseInt(c02List.get(0), 2);
         int oxygenGeneratorRating = Integer.parseInt(oxygenList.get(0), 2);
-        return "CO2ScrubberRating = " + CO2ScrubberRating + "\noxygenGeneratorRating = " + oxygenGeneratorRating
+        return "CO2ScrubberRating = " + CO2ScrubberRating + "\noxygenGeneratorRating =  " + oxygenGeneratorRating
                 + "\nresult = " + CO2ScrubberRating * oxygenGeneratorRating;
     }
 
